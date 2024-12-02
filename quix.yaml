@@ -315,6 +315,25 @@ deployments:
         inputType: FreeText
         required: false
         value: {{table_name}}
+  - name: Code for idea 1
+    application: Code for idea 1
+    version: latest
+    deploymentType: Service
+    resources:
+      cpu: 200
+      memory: 500
+      replicas: 1
+    variables:
+      - name: input
+        inputType: InputTopic
+        description: This is the input topic for f1 data
+        required: true
+        value: sensor-data-table
+      - name: output
+        inputType: OutputTopic
+        description: This is the output topic for hard braking events
+        required: true
+        value: test1
 
 # This section describes the Topics of the data pipeline
 topics:
