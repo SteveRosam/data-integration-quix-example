@@ -347,3 +347,8 @@ topics:
       retentionInMinutes: 1440
       retentionInBytes: 52428800
     dataTier: Silver
+  - name: test1
+    configuration:
+      replicationFactor: 2
+      retentionInMinutes: 1440
+      retentionInBytes: 52428800
