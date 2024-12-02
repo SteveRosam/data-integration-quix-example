@@ -244,7 +244,7 @@ deployments:
         inputType: InputTopic
         description: This is the input topic
         required: true
-        value: sensor-data-table
+        value: test1
       - name: AWS_S3_URI
         inputType: FreeText
         description: The URI or URL to your S3 bucket
